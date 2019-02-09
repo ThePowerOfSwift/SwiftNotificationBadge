@@ -3,7 +3,7 @@ A light weight Notification badge UI component written in Swift.
 -------------------
 
 SwiftNotificationBadge is a framework for NotificationBadge UI component, which is subclass of UIView.
-NotificationBadge supports two different size, default(24*24) and small(20*20). It's also supports the `Drop Shadow` which looks like below. i.e.
+NotificationBadge supports two different size, default(24x24) and small(20x20). It's also supports the `Drop Shadow` which looks like below. i.e.
 
 ![](SwiftNotificationBadge.gif)
 
