@@ -10,6 +10,11 @@
 		8439743D220F56A100485B5B /* SwiftNotificationBadge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84397433220F56A100485B5B /* SwiftNotificationBadge.framework */; };
 		84397442220F56A100485B5B /* SwiftNotificationBadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397441220F56A100485B5B /* SwiftNotificationBadgeTests.swift */; };
 		84397444220F56A100485B5B /* SwiftNotificationBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 84397436220F56A100485B5B /* SwiftNotificationBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8439744E220F570500485B5B /* NotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439744D220F570500485B5B /* NotificationBadge.swift */; };
+		84397452220F588700485B5B /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397451220F588700485B5B /* UIView+Layout.swift */; };
+		84397454220F5C7300485B5B /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397453220F5C7300485B5B /* UIView+DropShadow.swift */; };
+		84397456220F5D9200485B5B /* UILabel+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397455220F5D9200485B5B /* UILabel+Size.swift */; };
+		84397458220F5F5400485B5B /* NotificationBadge+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84397457220F5F5400485B5B /* NotificationBadge+Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		8439743C220F56A100485B5B /* SwiftNotificationBadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNotificationBadgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84397441220F56A100485B5B /* SwiftNotificationBadgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNotificationBadgeTests.swift; sourceTree = "<group>"; };
 		84397443220F56A100485B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8439744D220F570500485B5B /* NotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadge.swift; sourceTree = "<group>"; };
+		84397451220F588700485B5B /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		84397453220F5C7300485B5B /* UIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
+		84397455220F5D9200485B5B /* UILabel+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Size.swift"; sourceTree = "<group>"; };
+		84397457220F5F5400485B5B /* NotificationBadge+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationBadge+Configuration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,8 @@
 		84397435220F56A100485B5B /* SwiftNotificationBadge */ = {
 			isa = PBXGroup;
 			children = (
+				8439744F220F571900485B5B /* Badge */,
+				84397450220F586F00485B5B /* Helper */,
 				84397436220F56A100485B5B /* SwiftNotificationBadge.h */,
 				84397437220F56A100485B5B /* Info.plist */,
 			);
@@ -84,6 +96,25 @@
 				84397443220F56A100485B5B /* Info.plist */,
 			);
 			path = SwiftNotificationBadgeTests;
+			sourceTree = "<group>";
+		};
+		8439744F220F571900485B5B /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				8439744D220F570500485B5B /* NotificationBadge.swift */,
+				84397457220F5F5400485B5B /* NotificationBadge+Configuration.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		84397450220F586F00485B5B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84397451220F588700485B5B /* UIView+Layout.swift */,
+				84397453220F5C7300485B5B /* UIView+DropShadow.swift */,
+				84397455220F5D9200485B5B /* UILabel+Size.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					84397432220F56A100485B5B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					8439743B220F56A100485B5B = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84397458220F5F5400485B5B /* NotificationBadge+Configuration.swift in Sources */,
+				84397454220F5C7300485B5B /* UIView+DropShadow.swift in Sources */,
+				84397456220F5D9200485B5B /* UILabel+Size.swift in Sources */,
+				84397452220F588700485B5B /* UIView+Layout.swift in Sources */,
+				8439744E220F570500485B5B /* NotificationBadge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		84397448220F56A100485B5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.SwiftNotificationBadge;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +405,7 @@
 		84397449220F56A100485B5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +431,7 @@
 		8439744B220F56A100485B5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftNotificationBadgeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +449,7 @@
 		8439744C220F56A100485B5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftNotificationBadgeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
